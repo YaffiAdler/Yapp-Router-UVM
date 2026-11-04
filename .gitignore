@@ -1,0 +1,37 @@
+# ===== Cadence Xcelium build/run artifacts =====
+xcelium.d/
+INCA_libs/
+xrun.history
+xrun.log
+xrun.key
+*.log
+*.key
+
+# ===== Waveform databases (SimVision) =====
+*.shm/
+*.trn
+*.dsn
+*.vcd
+*.fsdb
+
+# ===== SimVision session state =====
+.simvision/
+source-bookmarks
+schematic-bookmarks
+dbrowser-bookmarks
+
+# ===== Coverage (IMC / vManager) =====
+cov_work/
+*.ucd
+*.ucm
+imc.log
+mdv.log
+
+# ===== Editors / OS =====
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
