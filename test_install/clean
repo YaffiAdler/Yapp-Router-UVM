@@ -1,3 +1,0 @@
-#!/bin/csh -f
-
-\rm -rf xcelium.d waves.shm xrun.log xrun.history xrun.key

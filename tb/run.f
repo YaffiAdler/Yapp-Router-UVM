@@ -1,0 +1,36 @@
+// 64 bit option for AWS labs
+-64
+-timescale 1ns/1ns
+-uvmhome $UVMHOME
+
+// UVCs
++incdir+../hbus/sv
+../hbus/sv/hbus_pkg.sv
+../hbus/sv/hbus_if.sv
+
++incdir+../channel/sv
+../channel/sv/channel_pkg.sv
+../channel/sv/channel_if.sv
+
++incdir+../clock_and_reset/sv
+../clock_and_reset/sv/clock_and_reset_pkg.sv
+../clock_and_reset/sv/clock_and_reset_if.sv
+
++incdir+../yapp/sv
+../yapp/sv/yapp_pkg.sv
+../yapp/sv/yapp_if.sv
+
+// Router module (reference model + scoreboard)
++incdir+../router
+../router/router_module.sv
+
+// Testbench
+clkgen.sv
+hw_top.sv
+tb_top.sv
+
+// DUT (not included in this repo - update the path to your local copy)
+../../YAPP_Router/router_rtl/yapp_router.sv
+
++UVM_TESTNAME=simple_mcseq_test
++UVM_VERBOSITY=UVM_LOW
